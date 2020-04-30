@@ -19,7 +19,12 @@ public class ListController {
     @Autowired
     private BookService bookService;
 
-    @GetMapping("list/user/{page}")
+    @GetMapping("/")
+    public String index(){
+        return "redirect:/list/user/0";
+    }
+
+    @GetMapping("/list/user/{page}")
     public String getUserList(Model map, @PathVariable("page") Integer page,Authentication authentication){
         if(authentication != null){
             userSetup(authentication, map);
@@ -32,7 +37,7 @@ public class ListController {
         return "listUsers";
     }
 
-    @GetMapping("list/books/{page}")
+    @GetMapping("/list/books/{page}")
     public String getBookList(Model map, @PathVariable("page") Integer page,Authentication authentication){
         if(authentication != null){
             userSetup(authentication, map);
