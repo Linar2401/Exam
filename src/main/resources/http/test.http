@@ -1,0 +1,16 @@
+GET https://restcountries.eu/rest/v2/all?fields=name;alpha3Code
+
+###
+
+GET https://restcountries.eu/rest/v2/all
+
+###
+
+GET https://restcountries.eu/rest/v2/name/russia
+
+###
+
+GET localhost:/comment/1/2
+
+
+###

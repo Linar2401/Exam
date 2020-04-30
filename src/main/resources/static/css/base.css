@@ -1,0 +1,15 @@
+#navbar {
+    background-color: #0c5460;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding-bottom: 100px; //height of the footer
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
